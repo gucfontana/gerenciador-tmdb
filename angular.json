@@ -105,7 +105,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "",
+            "baseHref": "https://gucfontana.github.io/gerenciador-tmdb/",
             "repo": "https://github.com/gucfontana/gerenciador-tmdb.git"
           }
         }
