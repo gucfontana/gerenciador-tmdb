@@ -97,9 +97,16 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
+              "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "",
+            "repo": "https://github.com/gucfontana/gerenciador-tmdb.git"
           }
         }
       }
