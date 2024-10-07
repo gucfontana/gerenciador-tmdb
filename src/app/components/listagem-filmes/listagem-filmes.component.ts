@@ -7,8 +7,8 @@ import { formatDate, NgClass, NgForOf } from '@angular/common';
   selector: 'app-listagem-filmes',
   standalone: true,
   imports: [NgForOf, NgClass],
-  templateUrl: '/listagem-filmes.component.html',
-  styleUrl: '/listagem-filmes.component.scss',
+  templateUrl: 'listagem-filmes.component.html',
+  styleUrl: 'listagem-filmes.component.scss',
 })
 
 export class ListagemFilmesComponent implements OnInit {

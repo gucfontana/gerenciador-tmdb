@@ -1,4 +1,4 @@
 export const environment = {
-  production: true,
-  API_KEY: 'Bearer <chave-de-leitura-api>',
+  production: false,
+  API_KEY: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NzI4MDAwMWY0YWxjYjQ4NGRlNzZkYjI0OGY5YzRhOCIsIm5iZiI6MTcyNzcxMDIyNC41ODM4NTUslN7YjI6IjY2ZmFiNzVtMWM1ZGYwYWYxMGQwMGZkN1yslnNjbi3Bycl6WyJhcGIfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.EqAe7Y9paLn5iJx181s7k6WePR02EvIztrR9WH8gCK4',
 };
