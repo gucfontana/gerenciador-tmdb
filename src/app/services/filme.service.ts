@@ -10,8 +10,21 @@ export class FilmeService {
   private readonly urlApi: string = 'https://api.themoviedb.org/3/movie';
 
   constructor(private http: HttpClient) {}
+
   public selecionarFilmesPopulares(pagina: number): Observable<any> {
     const urlCompleto = `${this.urlApi}/popular?page=${pagina}&language=pt-BR`;
+
+    return this.http.get<any>(urlCompleto, this.obterHeadersDeAutorizacao());
+  }
+
+  public selecionarDetalhesFilmePorId(id: any): Observable<any> {
+    const urlCompleto = `${this.urlApi}/${id}?append_to_response=videos,credits&language=pt-BR`;
+
+    return this.http.get<any>(urlCompleto, this.obterHeadersDeAutorizacao());
+  }
+
+  public buscarFilmes(query: string, pagina: number = 1): Observable<any> {
+    const urlCompleto = `https://api.themoviedb.org/3/search/movie?query=${query}&page=${pagina}&language=pt-BR`;
 
     return this.http.get<any>(urlCompleto, this.obterHeadersDeAutorizacao());
   }
